@@ -1,0 +1,91 @@
+body {
+    background-color: #1b1919;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 50px;
+}
+
+.box {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  width: 280px;
+  height: 610px;
+  border: 5px solid rgb(116, 116, 116);
+  border-radius: 12%;
+  justify-content: center;
+  padding: 20px;
+  margin :auto
+}
+#outputDiv {
+  background-color: rgb(221, 221, 221);
+  width: 280px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 60px;
+  margin: 5px;
+}
+
+.circles {
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 200px;
+}
+.circle {
+  background-color: rgb(48, 49, 49);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin: 5px;
+  text-align:center;
+  font-size: 30px;
+  color: rgb(243, 243, 243)
+}
+.circle_0 {
+  background-color: rgb(48, 49, 49);
+  width: 130px;
+  height: 60px;
+  border-radius: 40%;
+  margin: 5px;
+  text-align:center;
+  font-size: 30px;
+  color: rgb(243, 243, 243)
+}
+.circleT{
+  background-color: rgba(235, 160, 0, 0.925);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin: 5px;
+  text-align:center;
+  font-size: 30px;
+  color: rgb(243, 243, 243)
+}
+.circleB{
+  background-color: rgb(180, 179, 178);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin: 5px;
+  text-align:center;
+  font-size: 30px;
+  color: rgb(0, 0, 0)
+}
+
+@media (max-width: 400px) {
+  .circle {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.pressed {
+  background-color: #333; /* Change the background color to a darker shade */
+  transform: translateY(2px); /* Add a slight vertical displacement */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}

@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="HM.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+<div class="box">
+    <div class="circles">
+        <div id="outputDiv"></div>
+        <div class="circleB" onclick="clearOutput()" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">AC</div>
+        <div class="circleB" onclick="toggleNegation()" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">&#177;</div>
+        <div class="circleB" onclick="addPercentage()" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">%</div>
+        <div class="circleT" onclick="appendOperator('/')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">/</div>
+        <div class="circle" onclick="appendNumber('7')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">7</div>
+        <div class="circle" onclick="appendNumber('8')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">8</div>
+        <div class="circle" onclick="appendNumber('9')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">9</div>
+        <div class="circleT" onclick="appendOperator('*')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">*</div>
+        <div class="circle" onclick="appendNumber('4')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">4</div>
+        <div class="circle" onclick="appendNumber('5')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">5</div>
+        <div class="circle" onclick="appendNumber('6')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">6</div>
+        <div class="circleT" onclick="appendOperator('-')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">-</div>
+        <div class="circle" onclick="appendNumber('1')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">1</div>
+        <div class="circle" onclick="appendNumber('2')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">2</div>
+        <div class="circle" onclick="appendNumber('3')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">3</div>
+        <div class="circleT" onclick="appendOperator('+')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">+</div>
+        <div class="circle_0" onclick="appendNumber('0')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">0</div>
+        <div class="circle" onclick="appendDecimal('.')" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">.</div>
+        <div class="circleT" onclick="calculateResult()" onmousedown="this.classList.add('pressed')" onmouseup="this.classList.remove('pressed')">=</div>
+    </div>
+</div>
+<script src="HM.js"></script>
+</body>
+</html>
